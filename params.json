@@ -1,0 +1,34 @@
+{
+	"image_shape": [512, 512, 1],
+	"patch_shape": [512, 512,1],
+	"data_path_train": "/mnt/localscratch/maastro/Gokul/Development/pytorch/h5_files/training_baseline_chinese_combined.h5",
+    "data_path_val": "/mnt/localscratch/maastro/Gokul/Development/pytorch/h5_files/validation_cbaseline_chinese_combined.h5",
+    "contour_model_path": "/mnt/localscratch/maastro/Gokul/Development/pytorch/logs_combined/gradient_tape/20240606-224750/saved_models/model_full_200000.pth",
+	"log_path": "/mnt/localscratch/maastro/Gokul/Development/pytorch/logs_combined",
+	"split": 20,
+	"number_of_patches": 15,
+	"number_of_augmentations": 2,
+	"switch_views": "False",
+	"translate": "False",
+
+	"min_bound": -200,
+	"max_bound": 200,
+	"min_bound_contour": -500,
+	"max_bound_contour": 500,
+
+	"num_classes": 4,
+	"num_classes_bc": 2,
+	"batch_size": 4,
+	"num_steps": 200000,
+	"train_eval_step": 100,
+	"val_eval_step": 100,
+	"save_model_step": 10000,
+
+	"learning_rate": 0.0001,
+	"decay_steps": 10000,
+	"decay_rate": 0.9,
+	"opt_momentum": 0.9,
+	"dropout_rate": 0.05,
+	"l2_loss": 0.0001
+
+}
